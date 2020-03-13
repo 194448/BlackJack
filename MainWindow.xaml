@@ -1,0 +1,20 @@
+﻿<Window x:Class="ArrayYee.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArrayYee"
+        mc:Ignorable="d"
+        Title="BlackJack" Height="400" Width="600" Background="DarkGreen" WindowState="Maximized">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="btnHit" Click="btnHit_Click" Width="300">Hit</Button>
+            <Button x:Name="btnStay" Click="btnStay_Click" Width="300">Stay</Button>
+            <Button x:Name="btnDealNewHand" Click="btnDealNewHand_Click" Width="300">Deal New Hand</Button>
+        </StackPanel>
+        <Canvas x:Name="canvas" Background="DarkGreen">
+            <Label x:Name="lblPlayer" Content="PlayerHand:" Foreground="White"/>
+            <Label x:Name="lblDealer" Content="DealerHand:" Foreground="White" Canvas.Top="200"/>
+        </Canvas>
+    </StackPanel>
+</Window>
